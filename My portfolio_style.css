@@ -1,18 +1,16 @@
 #project_link {
-  
-  font-style: italic;
-  color: rgb(237, 123, 161);
-  font-weight: bolder;
-  transition: color 0.3s ease; 
-  text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.8), 0 0 30px rgba(255, 255, 0, 0.8), 0 0 40px rgba(255, 255, 0, 0.8);
-  font-size: medium;
-}
-
-#project_link:visited {
-  
-  color: skyblue;
+  display: inline-block;
+  margin: 12px 8px 24px 0;
+  padding: 10px 18px;
+  background-color: #e85d8f;
+  color: white;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(232, 93, 143, 0.25);
 }
 
 #project_link:hover {
-  color: rgb(135, 44, 135); 
+  background-color: #d94b7e;
 }
