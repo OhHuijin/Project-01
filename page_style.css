@@ -48,3 +48,16 @@ img {
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 48px;
+}
+
+.hero-image img {
+  width: 360px;
+  max-width: 85%;
+  border-radius: 24px;
+  object-fit: cover;
+}

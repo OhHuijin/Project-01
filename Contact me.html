@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Contact me</title>
-        <link rel="stylesheet" href="Contact_me_style.css">
-        <link rel="stylesheet" href="navigation_bar.css">
-        <link rel="stylesheet" href="page_style.css">
-    </head>
-    <body>
+  <head>
+    <title>Contact me</title>
+    <link rel="stylesheet" href="Contact_me_style.css" />
+    <link rel="stylesheet" href="navigation_bar.css" />
+    <link rel="stylesheet" href="page_style.css" />
+  </head>
+
+  <body>
     <nav class="menu">
       <div class="nav-container">
         <a href="index.html">Home</a>
@@ -15,31 +16,42 @@
         <a href="Contact me.html">Contact me</a>
       </div>
     </nav>
-        
-         <div id="content">  
-            <h1> Please write down below form. </h1>
 
-          <div id="picture">
-            <img src="contact_me.png" alt="picture" width="15%">
+    <div id="content">
+      <section class="contact-card">
+        <h1>Contact Me</h1>
+        <p class="contact-subtitle">
+          Have a question or want to connect? Leave your message below.
+        </p>
+
+        <img class="contact-icon" src="Contact_me.png" alt="Contact icon" />
+
+        <form
+          onsubmit="
+            showMessage();
+            return false;
+          "
+        >
+          <div class="form-row">
+            <input type="text" placeholder="Full name" name="name" />
+            <input type="text" placeholder="Phone number" name="PhoneNumber" />
           </div>
-    
-         <form>
-              <div id="submitter_info">  
-              <input type="text" placeholder="Full name" name="name" style="width: 20%; height: 50%;">
-              <input type="text" placeholder="Phone number" name="PhoneNumber" style="width: 20%; height: 50%;">
-              <input type="text" placeholder="e-mail" name="email" style="width: 20%; height: 50%;">
-                  <div id="detail">
-                   <textarea placeholder="Inquiry details" name="details" style="width: 60%; height: 100px;"></textarea>
-                    <button onclick="showMessage()">Submit</button>
-                 </div>
-              </div>
-          </form>
-         <script>
-            function showMessage() {
-               alert("Sorry, the backend is still under development! Please wait a little longer to use this feature! ");
-            }
-          </script>
 
-        </body>    
-    </html>
-    
+          <input type="email" placeholder="Email address" name="email" />
+
+          <textarea placeholder="Inquiry details" name="details"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+
+    <script>
+      function showMessage() {
+        alert(
+          "Sorry, the backend is still under development! Please wait a little longer to use this feature!",
+        );
+      }
+    </script>
+  </body>
+</html>
